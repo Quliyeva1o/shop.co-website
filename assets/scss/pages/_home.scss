@@ -1,0 +1,49 @@
+.hero-section {
+    background-color: #f2f0f1;
+    .container {
+        display: flex;
+        @include for-tablet{
+            flex-direction: column;
+        }
+        .img {
+            background-image: url(../../../assets/images/herobg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top -50px right 0;
+            width: 100%;
+            height: 663px;
+        }
+        .hero-content {
+            padding: 103px 0;
+
+            h1 {
+                font-family: $intb;
+                font-size: 64px;
+                @include text($intb, 700, 64px, 64px, #000);
+                width: 577px;
+                margin-bottom: 32px;
+            }
+            p {
+                @include text($satm, 400, 16px, 22px, rgba(0, 0, 0, 0.6));
+            }
+            a {
+                @include text($satr,400,16px,21.6px,#fff);
+                padding: 16px 54px;
+                border-radius: 62px;
+                background-color: #000;
+                border: none;
+                width: 210px;
+                height: 52px;
+                text-decoration: none;
+                margin-bottom: 48px;
+                @extend %center;
+            }
+            .boxes {
+                gap: 32px;
+                h3 {
+                    @include text($satb, 700, 40px, 54px, #000);
+                }
+            }
+        }
+    }
+}

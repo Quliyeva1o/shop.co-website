@@ -1,0 +1,449 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+/**
+* @license
+*
+* Font Family: Satoshi
+* Designed by: Deni Anggara
+* URL: https://www.fontshare.com/fonts/satoshi
+* © 2024 Indian Type Foundry
+*
+* Satoshi Light 
+* Satoshi LightItalic 
+* Satoshi Regular 
+* Satoshi Italic 
+* Satoshi Medium 
+* Satoshi MediumItalic 
+* Satoshi Bold 
+* Satoshi BoldItalic 
+* Satoshi Black 
+* Satoshi BlackItalic 
+* Satoshi Variable (Variable font)
+* Satoshi VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+  font-family: "Satoshi-light";
+  src: url("../fonts/Satoshi-Light.ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("../fonts/Satoshi-LightItalic.ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.ttf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.ttf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.ttf");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-BlackItalic.ttf");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 300.0 to 900.0
+  */
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.ttf");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 300.0 to 900.0
+  */
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("../fonts/Satoshi-VariableItalic.ttf");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Integral CF Extra";
+  src: url("../../../assets/fonts/IntegralCF-ExtraBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF Heavy Oblique";
+  src: url(" ../../../../fonts/IntegralCF-HeavyOblique.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url(" ../../../../fonts/IntegralCF-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url(" ../../../../fonts/IntegralCF-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF Oblique";
+  src: url(" ../../../../fonts/IntegralCF-RegularOblique.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Integral CF Medium Oblique";
+  src: url(" ../../../../fonts/IntegralCF-MediumOblique.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url(" ../../../../fonts/IntegralCF-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF Bold Oblique";
+  src: url(" ../../../../../../fonts/IntegralCF-BoldOblique.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Integral CF Demi Bold Oblique";
+  src: url(" ../../../../fonts/IntegralCF-DemiBoldOblique.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Integral CF Demi";
+  src: url(" ../../../../fonts/IntegralCF-DemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url(" ../../../../fonts/IntegralCF-Heavy.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF Extra Bold Oblique";
+  src: url(" ../../../../fonts/IntegralCF-ExtraBoldOblique.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+.container {
+  max-width: 1240px;
+  padding: 0 15px !important;
+  margin: 0 auto;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section .container .hero-content a, header nav .container .search-box, header .sign-up .sign-up-now p, header .sign-up .sign-up-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .sign-up {
+  background-color: #000;
+}
+header .sign-up .sign-up-now {
+  position: relative;
+  height: 38px;
+}
+@media screen and (max-width: 576px) {
+  header .sign-up .sign-up-now {
+    height: 34px;
+  }
+}
+header .sign-up .sign-up-now p {
+  font-family: "Satoshi-Light";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.9px;
+  color: #fff;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  header .sign-up .sign-up-now p {
+    font-size: 12px;
+  }
+}
+header .sign-up .sign-up-now p a {
+  font-family: "Satoshi-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.9px;
+  color: #fff;
+}
+@media screen and (max-width: 576px) {
+  header .sign-up .sign-up-now p a {
+    font-size: 12px;
+  }
+}
+header .sign-up .sign-up-now div {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  align-items: center;
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 576px) {
+  header .sign-up .sign-up-now div {
+    display: none;
+  }
+}
+header nav {
+  padding: 24px 0;
+}
+@media screen and (max-width: 576px) {
+  header nav {
+    padding: 23px 0;
+  }
+}
+header nav .container {
+  height: 48px;
+}
+@media screen and (max-width: 576px) {
+  header nav .container {
+    height: 18px;
+  }
+}
+header nav .container > div {
+  padding: 0 20px;
+}
+header nav .container .bars {
+  align-items: center;
+  display: none;
+  padding: 0;
+}
+@media screen and (max-width: 992px) {
+  header nav .container .bars {
+    display: flex;
+  }
+}
+header nav .container .logo {
+  align-items: center;
+  display: flex;
+}
+@media screen and (max-width: 576px) {
+  header nav .container .logo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav .container .logo img {
+    height: 18px;
+  }
+}
+header nav .container .nav-links {
+  display: flex;
+  align-items: center;
+}
+header nav .container .nav-links ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin-bottom: 0;
+  padding: 0;
+}
+header nav .container .nav-links ul li {
+  display: flex;
+}
+header nav .container .nav-links ul li img {
+  padding: 5px;
+}
+header nav .container .nav-links ul li a {
+  font-family: "Satoshi-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: #000;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 992px) {
+  header nav .container .nav-links {
+    display: none;
+  }
+}
+header nav .container .search-box {
+  position: relative;
+  width: 500px;
+  padding: 12px 16px;
+  border-radius: 62px;
+  background-color: #f0f0f0;
+  justify-content: normal;
+  gap: 12px;
+}
+header nav .container .search-box input {
+  border: none;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 576px) {
+  header nav .container .search-box {
+    display: none;
+  }
+}
+header nav .container .icons {
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+header nav .container .icons ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+}
+header nav .container .icons ul li:first-of-type {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  header nav .container .icons ul li:first-of-type {
+    display: flex;
+  }
+}
+
+.hero-section {
+  background-color: #f2f0f1;
+}
+.hero-section .container {
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  .hero-section .container {
+    flex-direction: column;
+  }
+}
+.hero-section .container .img {
+  background-image: url(../../../assets/images/herobg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -50px right 0;
+  width: 100%;
+  height: 663px;
+}
+.hero-section .container .hero-content {
+  padding: 103px 0;
+}
+.hero-section .container .hero-content h1 {
+  font-family: "Integral CF Extra";
+  font-size: 64px;
+  font-family: "Integral CF Extra";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000;
+  width: 577px;
+  margin-bottom: 32px;
+}
+.hero-section .container .hero-content p {
+  font-family: "Satoshi-Medium";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.hero-section .container .hero-content a {
+  font-family: "Satoshi-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: #fff;
+  padding: 16px 54px;
+  border-radius: 62px;
+  background-color: #000;
+  border: none;
+  width: 210px;
+  height: 52px;
+  text-decoration: none;
+  margin-bottom: 48px;
+}
+.hero-section .container .hero-content .boxes {
+  gap: 32px;
+}
+.hero-section .container .hero-content .boxes h3 {
+  font-family: "Satoshi-Bold";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: #000;
+}/*# sourceMappingURL=main.css.map */

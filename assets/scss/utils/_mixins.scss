@@ -1,0 +1,48 @@
+@mixin text($f,$w,$fz,$lh,$c){
+    font-family: $f;
+    font-weight:$w;
+    font-size: $fz;;
+    line-height: $lh;
+    color: $c;
+    
+};
+     
+@mixin size($w,$h){
+    width: $w;
+    height: $h;
+    
+}
+
+
+
+
+
+@mixin for-phone {
+    @media screen and (max-width: $phone-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media screen and (max-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-laptop {
+    @media screen and (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-large-desktop {
+    @media screen and (max-width:$large-desktop-breakpoint) and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-xxl-large-desktop {
+    @media screen and (max-width:$xxl-large-desktop-breakpoint) {
+        @content;
+    }
+}

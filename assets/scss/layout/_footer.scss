@@ -1,0 +1,145 @@
+footer {
+    background-color: #f0f0f0;
+    position: relative;
+    .staysec {
+        .stay {
+            display: flex;
+            position: absolute;
+            background-color: #000;
+            top: -18%;
+            padding: 0 64px !important;
+            border-radius: 20px;
+            width: 1210px;
+            @media screen and (max-width: 1240px) {
+                max-width: calc(100vw - 30px);
+            }
+            @include for-tablet {
+                display: grid;
+                justify-content: center !important;
+                padding: 0 24px !important;
+            }
+
+            h1 {
+                @extend .heading;
+                color: #fff;
+                font-size: 40px;
+                line-height: 45px;
+                padding: 43px 0;
+                text-align: start;
+                @include for-phone {
+                    font-size: 32px;
+                    line-height: 35px;
+                    padding: 32px 0;
+                }
+                br {
+                    @include for-tablet {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .inp {
+            width: 349px;
+            gap: 12px;
+            padding: 36px 0;
+            @include for-tablet {
+                width: 100%;
+                padding-top: 0;
+            }
+
+            a,
+            .input {
+                height: 48px;
+                border-radius: 62px;
+                background-color: #fff;
+                @include text($satm, 500, 16px, 21.6px, #000);
+                @extend %center;
+                text-decoration: none;
+                overflow: hidden;
+            }
+            img {
+                padding: 12px;
+            }
+            input {
+                width: 100%;
+                border: none;
+                &:focus-visible {
+                    border: none;
+                }
+            }
+        }
+    }
+    .footer-container {
+        padding: 160px 15px !important;
+        padding-bottom: 50px!important;
+        @include for-tablet {
+            padding: 200px 15px !important;
+        }
+        gap: 113px;
+        @include for-tablet {
+            gap: 50px;
+            flex-direction: column;
+        }
+    }
+    .links {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+        width: 100%;
+        @include for-tablet {
+            grid-template-columns: auto auto auto;
+        }
+        @include for-phone {
+            grid-template-columns: auto auto;
+        }
+    }
+    .footer1 {
+        .sosial{
+            cursor: pointer;
+            img{
+                height: 28px;
+            }
+        }
+        img {
+            height: 23px;
+        }
+
+        p {
+            @extend .p;
+            margin-top: 25px;
+            width: 248px;
+            @include for-tablet {
+                width: 100%;
+            }
+        }
+    }
+
+    h4 {
+        @include text($satm, 500, 16px, 18px, #000);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+            margin-top: 20px;
+            @include for-phone {
+                margin-top: 16px;
+            }
+            a {
+                text-decoration: none;
+                @extend .p;
+            }
+        }
+    }
+}
+
+
+.end>div{
+    padding: 44px 15px!important;
+    padding-top: 25px!important;
+    @include for-phone{
+        flex-direction: column;
+    }
+}

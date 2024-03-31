@@ -284,6 +284,11 @@ header nav .container {
 header nav .container > div {
   padding: 0 20px;
 }
+@media screen and (max-width: 330px) {
+  header nav .container > div {
+    padding: 0;
+  }
+}
 header nav .container .bars {
   align-items: center;
   display: none;
@@ -391,18 +396,48 @@ header nav .container .icons ul li:first-of-type {
 @media screen and (max-width: 992px) {
   .hero-section .container {
     flex-direction: column;
+    padding: 0 !important;
+  }
+}
+.hero-section .container .second {
+  padding: 0 !important;
+}
+@media screen and (max-width: 992px) {
+  .hero-section .container .second {
+    padding: 0 15px !important;
   }
 }
 .hero-section .container .img {
   background-image: url(../../../assets/images/herobg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top -50px right 0;
   width: 100%;
-  height: 663px;
+}
+@media screen and (max-width: 992px) {
+  .hero-section .container .img {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero-section .container .img {
+    background-position: center;
+  }
 }
 .hero-section .container .hero-content {
   padding: 103px 0;
+}
+@media screen and (max-width: 576px) {
+  .hero-section .container .hero-content {
+    padding: 40px 0;
+  }
+}
+.hero-section .container .hero-content > p {
+  width: 545px;
+}
+@media screen and (max-width: 576px) {
+  .hero-section .container .hero-content > p {
+    width: 100%;
+  }
 }
 .hero-section .container .hero-content h1 {
   font-family: "Integral CF Extra";
@@ -415,12 +450,20 @@ header nav .container .icons ul li:first-of-type {
   width: 577px;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 576px) {
+  .hero-section .container .hero-content h1 {
+    width: 100%;
+    font-size: 36px;
+    line-height: 34px;
+  }
+}
 .hero-section .container .hero-content p {
   font-family: "Satoshi-Medium";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
 }
 .hero-section .container .hero-content a {
   font-family: "Satoshi-Regular";
@@ -437,8 +480,18 @@ header nav .container .icons ul li:first-of-type {
   text-decoration: none;
   margin-bottom: 48px;
 }
+@media screen and (max-width: 576px) {
+  .hero-section .container .hero-content a {
+    width: 100%;
+  }
+}
 .hero-section .container .hero-content .boxes {
   gap: 32px;
+}
+@media screen and (max-width: 576px) {
+  .hero-section .container .hero-content .boxes {
+    justify-content: center;
+  }
 }
 .hero-section .container .hero-content .boxes h3 {
   font-family: "Satoshi-Bold";
@@ -446,4 +499,38 @@ header nav .container .icons ul li:first-of-type {
   font-size: 40px;
   line-height: 54px;
   color: #000;
+}
+@media screen and (max-width: 576px) {
+  .hero-section .container .hero-content .boxes h3 {
+    font-family: "Satoshi-Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: #000;
+    margin-bottom: 0;
+  }
+}
+.hero-section .container .hero-content .boxes p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.brends {
+  background-color: #000;
+  padding: 42px 0;
+}
+.brends ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 22px 0;
+}
+.brends ul li img {
+  height: 38px;
+}
+@media screen and (max-width: 992px) {
+  .brends ul li img {
+    height: 23.25px;
+  }
 }/*# sourceMappingURL=main.css.map */

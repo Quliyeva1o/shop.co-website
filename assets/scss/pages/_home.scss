@@ -2,20 +2,42 @@
     background-color: #f2f0f1;
     .container {
         display: flex;
-        @include for-tablet{
+        @include for-tablet {
             flex-direction: column;
+            padding: 0 !important;
+        }
+
+        .second {
+            padding: 0 !important;
+            @include for-tablet {
+                padding: 0 15px !important;
+            }
         }
         .img {
             background-image: url(../../../assets/images/herobg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: top -50px right 0;
             width: 100%;
-            height: 663px; 
 
+            @include for-tablet {
+                height: 100vh;
+            }
+            @include for-phone{
+                background-position: center;
+            }
         }
+
         .hero-content {
             padding: 103px 0;
+            @include for-phone {
+                padding: 40px 0;
+            }
+            > p {
+                width: 545px;
+                @include for-phone {
+                    width: 100%;
+                }
+            }
 
             h1 {
                 font-family: $intb;
@@ -23,12 +45,18 @@
                 @include text($intb, 700, 64px, 64px, #000);
                 width: 577px;
                 margin-bottom: 32px;
+                @include for-phone {
+                    width: 100%;
+                    font-size: 36px;
+                    line-height: 34px;
+                }
             }
             p {
                 @include text($satm, 400, 16px, 22px, rgba(0, 0, 0, 0.6));
+                font-size: 14px;
             }
             a {
-                @include text($satr,400,16px,21.6px,#fff);
+                @include text($satr, 400, 16px, 21.6px, #fff);
                 padding: 16px 54px;
                 border-radius: 62px;
                 background-color: #000;
@@ -38,11 +66,46 @@
                 text-decoration: none;
                 margin-bottom: 48px;
                 @extend %center;
+                @include for-phone {
+                    width: 100%;
+                }
             }
             .boxes {
                 gap: 32px;
+                @include for-phone {
+                    justify-content: center;
+                }
                 h3 {
                     @include text($satb, 700, 40px, 54px, #000);
+                    @include for-phone {
+                        @include text($satb, 700, 24px, 32.4px, #000);
+                        margin-bottom: 0;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.brends {
+    background-color: #000;
+    padding: 42px 0;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 22px 0;
+
+        li {
+            img {
+                height: 38px;
+                @include for-tablet {
+                    height: 23.25px;
                 }
             }
         }

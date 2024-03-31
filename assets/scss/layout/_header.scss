@@ -51,6 +51,9 @@ header {
 
             > div {
                 padding: 0 20px;
+                @media screen and (max-width: 330px) {
+                    padding: 0;
+                }
             }
             .bars {
                 align-items: center;
